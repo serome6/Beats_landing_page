@@ -1,0 +1,1315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.navbar {
+  background-color: white;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.home {
+  margin: 160px 80px 80px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.lat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tisha h1 {
+  color: white;
+  font-size: 65px;
+}
+
+.tisha p {
+  color: white;
+  margin-block: 10px;
+}
+
+.lat img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(15px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.tisha button {
+  border: none;
+  background-color: red;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  transition: 1s;
+  transform: scale(1);
+  box-shadow: 0 2px 2px red;
+  cursor: pointer;
+}
+
+.tisha button:hover {
+  background-color: white;
+  color: red;
+}
+
+.tisha em {
+  color: red;
+}
+
+.store {
+  background-color: black;
+  padding: 80px;
+}
+
+.abt {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.stor {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.stor img {
+  width: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+.tent p {
+  color: rgb(164, 162, 162);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.neet p{
+  color: rgb(164, 162, 162);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.tent h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 29px;
+}
+
+.neet h2{
+  color: white;
+   margin-bottom: 10px;
+  font-size: 29px;
+}
+
+
+.tent h5 {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.neet h5{
+  color: red;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+
+.tent button {
+  padding: 10px;
+  border: 1px solid rgb(164, 162, 162);
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.tent button:hover {
+  background-color: white;
+  color: red;
+}
+
+.tent {
+  width: 50%;
+}
+
+.stor p {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.stor h5 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.stor button {
+  background-color: red;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+.stores {
+  width: 70%;
+}
+
+.store {
+  border-top: 0.5px solid #1b1b1b;
+}
+
+.Gallery {
+  padding: 80px;
+  border-top: 0.5px solid #1b1b1b;
+}
+
+.gal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.lery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.item {
+  height: 200px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item {
+  position: relative;
+}
+
+.item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.item .text {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.item:hover .text {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aut {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.image img {
+  width: 300px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.image {
+  position: relative;
+}
+
+.image h5 {
+  color: white;
+  position: absolute;
+}
+
+.About {
+  background-color: black;
+  padding: 80px;
+  border-top: 0.5px solid #1b1b1b;
+}
+
+.ant {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.ant span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+.ant span h2 {
+  color: red;
+}
+.ex h5 {
+  color: red;
+  margin-bottom: 0 0 5px;
+}
+
+.ex p {
+  color: white;
+  margin: 0;
+}
+
+.ex {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.tent p {
+  margin-bottom: 20px;
+}
+
+.pre {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pre i {
+  color: red;
+  font-size: 25px;
+ 
+}
+
+.contact{
+  background-color: black;
+  padding: 80px;
+  border-top: 0.5px solid #1b1b1b;
+}
+
+.icon{
+  display: flex;
+  color: white;
+  gap: 7px;
+  font-size: 25px;
+}
+
+.folloe h5{
+  color: white;
+}
+
+.ont{
+  display: grid;
+  justify-content: space-between;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  align-items: flex-start;
+}
+
+.formgroup{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.formgroup label{
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+.group{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.formgroup input{
+ background-color: transparent;
+  border:1px solid #1b1b1b; 
+  border-radius: 8px;
+  padding: 15px;
+  color: red;
+  width: 100%; 
+}
+
+.orm input{
+  background-color: transparent;
+  border:1px solid #1b1b1b; 
+  border-radius: 8px;
+  padding: 15px;
+  color: red;
+  width: 100%; 
+  margin-top: 12px;
+}
+.formgroup textarea{
+  background-color: transparent;
+  border:1px solid #1b1b1b; 
+  border-radius: 8px;
+  padding: 15px;
+  color: red;
+  width: 100%;
+}
+
+.formgroup textarea{
+  height: 150px;
+  resize: vertical;
+}
+
+input:focus{
+  outline: 1px solid red;
+}
+
+textarea:focus{
+  outline: 1px solid red;
+}
+
+form button{
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+form:hover button{
+  background-color: white;
+  color: red;
+}
+
+.orm h5{
+  color: red;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.orm p {
+  color: rgb(164, 162, 162);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.orm button{
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  background-color: red;
+  border: none;
+  color: white;
+  margin-top: 15px;
+}
+
+.orm:hover button{
+  background-color: white;
+  color: red;
+}
+
+footer{
+  background-color: white;
+  padding: 80px;
+}
+
+.foot{
+  display: grid;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.on{
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.ppart a p{
+  margin-top: 5px;
+  
+}
+
+.ppart a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* ========================================
+   RESPONSIVE CSS
+   TABLET + MOBILE + HAMBURGER MENU
+   ======================================== */
+
+
+/* ========================================
+   HAMBURGER MENU
+   Hidden on desktop
+   ======================================== */
+
+.hamburger {
+  display: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* ========================================
+   TABLET
+   768px - 1024px
+   ======================================== */
+
+@media (max-width: 1024px) {
+
+  /* ---------- NAVBAR ---------- */
+
+  .navbar {
+    padding: 18px 30px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+
+  /* ---------- HOME ---------- */
+
+  .home {
+    margin: 140px 50px 60px;
+  }
+
+  .lat {
+    gap: 30px;
+  }
+
+  .tisha {
+    min-width: 0;
+  }
+
+  .tisha h1 {
+    font-size: 55px;
+  }
+
+  .lat img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+  }
+
+
+  /* ---------- STORE ---------- */
+
+  .store {
+    padding: 60px 50px;
+  }
+
+  .abt {
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .store .tent {
+    width: 35%;
+    min-width: 0;
+  }
+
+  .stores {
+    width: 65%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    min-width: 0;
+  }
+
+  .stor {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .stor img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* ---------- GALLERY ---------- */
+
+  .Gallery {
+    padding: 60px 50px;
+  }
+
+  .gal {
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .Gallery .tent {
+    width: 35%;
+    min-width: 0;
+  }
+
+  .lery {
+    width: 65%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .item {
+    height: 180px;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .item img {
+    max-width: 100%;
+  }
+
+
+  /* ---------- ABOUT ---------- */
+
+  .About {
+    padding: 60px 50px;
+  }
+
+  .aut {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .image {
+    min-width: 0;
+  }
+
+  .image img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+  }
+
+  .About .tent {
+    width: 45%;
+    min-width: 0;
+  }
+
+  .ant {
+    gap: 15px;
+  }
+
+  .ant span {
+    min-width: 0;
+  }
+
+  .con {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+
+  /* ---------- CONTACT ---------- */
+
+  .contact {
+    padding: 60px 50px;
+  }
+
+  .ont {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .ont > * {
+    min-width: 0;
+  }
+
+  .group {
+    gap: 10px;
+  }
+
+  .formgroup {
+    min-width: 0;
+  }
+
+  .formgroup input,
+  .formgroup textarea,
+  .orm input {
+    max-width: 100%;
+  }
+
+  .orm {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding: 60px 50px;
+  }
+
+  .foot {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 25px;
+  }
+
+  .foot > * {
+    min-width: 0;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+   481px - 767px
+   ======================================== */
+
+@media (max-width: 767px) {
+
+  /* ======================================
+     NAVBAR + HAMBURGER
+     ====================================== */
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 21px;
+    flex-shrink: 0;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+    z-index: 1002;
+  }
+
+  /* Hide normal navigation */
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show navigation when JS adds active */
+  .navbar nav.active {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+
+  /* ======================================
+     HOME
+     ====================================== */
+
+  .home {
+    margin: 120px 20px 50px;
+  }
+
+  .lat {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .tisha {
+    width: 100%;
+  }
+
+  .tisha h1 {
+    font-size: 45px;
+    line-height: 1.1;
+  }
+
+  .tisha p {
+    font-size: 14px;
+  }
+
+  .tisha button {
+    display: inline-block;
+  }
+
+  .lat img {
+    width: 240px;
+    height: 240px;
+    max-width: 100%;
+  }
+
+
+  /* ======================================
+     STORE
+     ====================================== */
+
+  .store {
+    padding: 50px 20px;
+  }
+
+  .abt {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .store .tent {
+    width: 100%;
+  }
+
+  .tent h2 {
+    font-size: 26px;
+  }
+
+  .tent p {
+    font-size: 14px;
+  }
+
+  .stores {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .stor {
+    padding: 10px;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .stor img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .stor p {
+    font-size: 13px;
+  }
+
+  .stor h5 {
+    font-size: 13px;
+  }
+
+  .stor button {
+    font-size: 12px;
+    padding: 7px 5px;
+  }
+
+
+  /* ======================================
+     GALLERY
+     ====================================== */
+
+  .Gallery {
+    padding: 50px 20px;
+  }
+
+  .gal {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .Gallery .tent {
+    width: 100%;
+  }
+
+  .lery {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .item {
+    width: 100%;
+    height: 150px;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .item .text {
+    font-size: 18px;
+    max-width: 90%;
+  }
+
+
+  /* ======================================
+     ABOUT
+     ====================================== */
+
+  .About {
+    padding: 50px 20px;
+  }
+
+  .aut {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .About .tent {
+    width: 100%;
+  }
+
+  .About .tent p {
+    font-size: 14px;
+  }
+
+  .ant {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .ant span {
+    min-width: 0;
+  }
+
+  .ant span h2 {
+    font-size: 24px;
+  }
+
+  .ant span p {
+    font-size: 12px;
+    word-break: normal;
+  }
+
+  .con {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .pre {
+    min-width: 0;
+  }
+
+  .ex {
+    min-width: 0;
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .ex p {
+    word-wrap: break-word;
+  }
+
+  .pre i {
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+
+  /* ======================================
+     CONTACT
+     ====================================== */
+
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .ont {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+  }
+
+  .ont > * {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .formgroup {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 20px;
+  }
+
+  .formgroup input,
+  .formgroup textarea,
+  .orm input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .formgroup textarea {
+    height: 130px;
+  }
+
+  .orm {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .orm button,
+  form button {
+    max-width: 100%;
+  }
+
+  .icon {
+    font-size: 22px;
+    flex-wrap: wrap;
+  }
+
+
+  /* ======================================
+     FOOTER
+     ====================================== */
+
+  footer {
+    padding: 50px 20px;
+  }
+
+  .foot {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 20px;
+  }
+
+  .foot > * {
+    min-width: 0;
+  }
+
+  .foot .logo {
+    grid-column: 1 / -1;
+  }
+
+  .ppart h5,
+  .olloe h5 {
+    font-size: 14px;
+  }
+
+  .ppart a p {
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+  .on {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+}
+
+
+/* ========================================
+   VERY SMALL PHONES
+   320px - 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+  /* ---------- NAVBAR ---------- */
+
+  .navbar {
+    padding: 14px 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    font-size: 22px;
+  }
+
+  .navbar nav {
+    padding: 20px 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+
+  /* ---------- HOME ---------- */
+
+  .home {
+    margin: 110px 15px 40px;
+  }
+
+  .tisha h1 {
+    font-size: 38px;
+  }
+
+  .tisha p {
+    font-size: 13px;
+  }
+
+  .lat img {
+    width: 210px;
+    height: 210px;
+  }
+
+
+  /* ---------- STORE ---------- */
+
+  .store {
+    padding: 45px 15px;
+  }
+
+  .stores {
+    gap: 8px;
+  }
+
+  .stor {
+    padding: 8px;
+  }
+
+  .stor p {
+    font-size: 12px;
+  }
+
+  .stor h5 {
+    font-size: 12px;
+  }
+
+  .stor button {
+    font-size: 11px;
+    padding: 7px 3px;
+  }
+
+
+  /* ---------- GALLERY ---------- */
+
+  .Gallery {
+    padding: 45px 15px;
+  }
+
+  .lery {
+    gap: 6px;
+  }
+
+  .item {
+    height: 130px;
+  }
+
+  .item .text {
+    font-size: 15px;
+  }
+
+
+  /* ---------- ABOUT ---------- */
+
+  .About {
+    padding: 45px 15px;
+  }
+
+  .image img {
+    height: 260px;
+  }
+
+  .ant {
+    gap: 5px;
+  }
+
+  .ant span h2 {
+    font-size: 20px;
+  }
+
+  .ant span p {
+    font-size: 10px;
+  }
+
+
+  /* ---------- CONTACT ---------- */
+
+  .contact {
+    padding: 45px 15px;
+  }
+
+  .neet h2 {
+    font-size: 26px;
+  }
+
+  .neet p {
+    font-size: 13px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding: 45px 15px;
+  }
+
+  .foot {
+    gap: 30px 15px;
+  }
+
+  .ppart h5,
+  .olloe h5 {
+    font-size: 13px;
+  }
+
+  .ppart a p {
+    font-size: 12px;
+  }
+
+  .on {
+    font-size: 15px;
+    gap: 7px;
+  }
+
+}
+
+
+/* ========================================
+   EXTRA OVERFLOW PROTECTION
+   ======================================== */
+
+@media (max-width: 767px) {
+
+  .navbar,
+  .home,
+  .store,
+  .Gallery,
+  .About,
+  .contact,
+  footer {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input,
+  textarea,
+  button {
+    max-width: 100%;
+  }
+
+}
